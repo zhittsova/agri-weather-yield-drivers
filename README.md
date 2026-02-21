@@ -48,7 +48,7 @@ and expects both Python and dependencies to be managed by `uv`.
 ### 2. Open in VS Code (workspace provided)
 
 - Select interpreter: `.venv/bin/python`
-- Run tests from Test Explorer (configured to use `pytest` on `tests/`)
+- Run tests from Test Explorer (configured to use `pytest` on `packages/*/tests/` and `apps/*/tests`)
 - Use tasks: `uv: sync`, `test: pytest`, `lint: ruff`, `typecheck: mypy`
 
 ### 3. Local quality checks
