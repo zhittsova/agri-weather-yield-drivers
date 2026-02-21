@@ -1,10 +1,14 @@
 [project]
 name = "agri-weather-yield-drivers"
 version = "0.1.0"
-description = "Add your description here"
+description = "Explainable weather and soil drivers for yield risk signals"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
+
+# TODO: add CLI entry points here when we have them:
+# [project.scripts]
+# agri-weather-yield-drivers = "agri_weather_yield_drivers.cli:main"
 
 [dependency-groups]
 dev = [
