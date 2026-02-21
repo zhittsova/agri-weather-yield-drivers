@@ -27,3 +27,21 @@ build-backend = "uv_build"
 package = false # root as virtual package, just a workspace
 default-groups = ["dev"]
 
+[tool.mypy]
+files = [
+    "packages/**/src",
+    "packages/**/tests",
+    "apps/*/*.py",
+]
+python_version = "3.13"
+# mypy_path = ["src"]
+strict = true
+warn_unused_configs = true
+warn_unused_ignores = true
+warn_return_any = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+module = ["sklearn.*", "matplotlib.*"]
+ignore_missing_imports = true
