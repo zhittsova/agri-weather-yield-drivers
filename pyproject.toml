@@ -45,7 +45,9 @@ select = ["E", "F", "I", "B", "UP", "SIM", "W"]
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
 [tool.mypy]
+files = ['.']
 # files = [
 #     "packages/**/src",
 #     "packages/**/tests",
