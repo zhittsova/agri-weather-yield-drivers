@@ -27,11 +27,24 @@ build-backend = "uv_build"
 package = false # root as virtual package, just a workspace
 default-groups = ["dev"]
 
-[tool.mypy]
-files = [
+[tool.ruff]
+src = [
     "packages/**/src",
     "packages/**/tests",
     "apps/*/*.py",
+    "apps/**/src",
+    "apps/**/tests",
+]
+extend-exclude = [".history"]
+line-length = 120
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "W"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
 [tool.mypy]
 # files = [
 #     "packages/**/src",
