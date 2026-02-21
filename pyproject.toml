@@ -19,3 +19,7 @@ dev = [
 requires = ["uv_build>=0.10.4,<0.11.0"]
 build-backend = "uv_build"
 
+[tool.uv]
+package = false # root as virtual package, just a workspace
+default-groups = ["dev"]
+
