@@ -27,6 +27,12 @@ build-backend = "uv_build"
 package = false # root as virtual package, just a workspace
 default-groups = ["dev"]
 
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra --strict-markers --strict-config"
+
 [tool.ruff]
 src = [
     "packages/**/src",
