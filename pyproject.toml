@@ -32,7 +32,12 @@ files = [
     "packages/**/src",
     "packages/**/tests",
     "apps/*/*.py",
-]
+[tool.mypy]
+# files = [
+#     "packages/**/src",
+#     "packages/**/tests",
+#     "apps/*/*.py",
+# ]
 python_version = "3.13"
 # mypy_path = ["src"]
 strict = true
