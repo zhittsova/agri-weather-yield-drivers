@@ -11,7 +11,7 @@ Produces a reproducible reporting mart and GeoJSON layers suitable for mapping.
 make setup
 ```
 
-## 2. Run tests + lint
+### 2. Run tests + lint
 
 ```sh
 make test
@@ -23,7 +23,7 @@ make lint
 ### Makefile overview
 ```sh
 make setup     # uv: create venv, install deps, pre-commit install
-make sync      # full uv sync --all-packages --akk-extras --akk-groups
+make sync      # full uv sync --all-packages --all-extras --all-groups
 make test      # unit tests
 make lint      # run ruff with --fix
 make format    # run ruff
