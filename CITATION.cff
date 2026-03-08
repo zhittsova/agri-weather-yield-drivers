@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: agri-weather-yield-drivers
+message: "If you use this repo, please cite it."
+type: software
+authors:
+  - family-names: "Zhittsova"
+    given-names: "Katerina"
+version: 0.1.0
+date-released: 2026-02-21
+license: GPL-3.0-or-later
