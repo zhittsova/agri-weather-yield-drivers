@@ -5,7 +5,7 @@
 Explainable **weather → yield → soil** drivers and regional **risk zoning** (e.g., sandy-soil zones under rainfall deficit).
 Produces a reproducible reporting mart and GeoJSON layers suitable for mapping.
 
-This repo is work in progress. Currently I'm exploring the data sources first but want to produce a quick MVP before going too deep. Check out my progress in the [`notebooks/` folder](notebooks/).
+This repo is work in progress. Currently I'm exploring the data sources first but want to produce a quick MVP before going too deep. Check out my progress in the [`notebooks/` folder](notebooks/). GitHub can render the Notebooks, I'll provide a Binder link later.
 
 ## Quickstart
 
