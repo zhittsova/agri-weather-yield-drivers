@@ -22,5 +22,6 @@
             "source.fixAll.ruff": "always",
             "source.organizeImports.ruff": "always"
         },
-    }
+    },
+    "makefile.configureOnOpen": false
 }

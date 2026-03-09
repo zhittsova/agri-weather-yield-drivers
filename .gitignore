@@ -211,3 +211,6 @@ __marimo__/
 
 # Output artifacts
 **/outputs/
+
+# Notebook data caches
+_cache/
