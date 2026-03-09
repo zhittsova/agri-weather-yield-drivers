@@ -19,6 +19,8 @@ dev = [
     "ruff>=0.7.0",
 ]
 notebooks = [
+    "folium>=0.19.0",
+    "requests>=2.32.0",
     "ipykernel>=6.29.0",
     "pandas>=3.0.1",
     "numpy>=2.4.2",
@@ -28,6 +30,7 @@ notebooks = [
     "jinja2>=3.1.6",
     "duckdb>=1.4.4",
     "pyarrow>=23.0.1",
+    "cartopy>=0.25.0",
 ]
 
 [build-system]
