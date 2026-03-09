@@ -1,11 +1,11 @@
 # agri-weather-yield-drivers
 
-![CI](https://github.com/zhittsova/agri-weather-yield-drivers/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/zhittsova/agri-weather-yield-drivers/actions/workflows/ci.yml/badge.svg?branch=main)
 
 Explainable **weather → yield → soil** drivers and regional **risk zoning** (e.g., sandy-soil zones under rainfall deficit).
 Produces a reproducible reporting mart and GeoJSON layers suitable for mapping.
 
-This repo is work in progress. Currently I'm exploring the data sources first but want to produce a quick MVP before going too deep. Check out my progress in the [`notebooks/` folder](https://github.com/zhittsova/agri-weather-yield-drivers/tree/main/notebooks).
+This repo is work in progress. Currently I'm exploring the data sources first but want to produce a quick MVP before going too deep. Check out my progress in the [`notebooks/` folder](notebooks/).
 
 ## Quickstart
 
