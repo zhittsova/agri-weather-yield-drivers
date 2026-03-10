@@ -1,11 +1,15 @@
 # agri-weather-yield-drivers
 
 ![CI](https://github.com/zhittsova/agri-weather-yield-drivers/actions/workflows/ci.yml/badge.svg?branch=main)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zhittsova/agri-weather-yield-drivers/main?labpath=notebooks)
 
 Explainable **weather → yield → soil** drivers and regional **risk zoning** (e.g., sandy-soil zones under rainfall deficit).
 Produces a reproducible reporting mart and GeoJSON layers suitable for mapping.
 
-This repo is work in progress. Currently I'm exploring the data sources first but want to produce a quick MVP before going too deep. Check out my progress in the [`notebooks/` folder](notebooks/). GitHub can render the Notebooks, I'll provide a Binder link later.
+This repo is work in progress. Currently I'm exploring the data sources first but want to produce a quick MVP before going too deep. Check out my progress in the [`notebooks/` folder](notebooks/) or launch them interactively on [Binder](https://mybinder.org/v2/gh/zhittsova/agri-weather-yield-drivers/main?labpath=notebooks).
+
+**Binder limitation:** mybinder.org has limited container disk space. Notebooks that write files at runtime (e.g., DuckDB databases, downloaded datasets) may fail with a "424" save error when the quota is exceeded. Right now the notebooks are in sequence and rely on a shared DuckDB db as an analytical store.
+For the full multi-notebook pipeline, run locally with `make sync`.
 
 ## Quickstart
 
