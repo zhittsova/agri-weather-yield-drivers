@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Bootstrap uv (fast, single-binary installer).
+pip install --no-cache-dir uv
+
+# Install notebook deps from the single source of truth (pyproject.toml).
+uv export --no-hashes --group notebooks | uv pip install --system --no-cache -r -
