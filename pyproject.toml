@@ -63,7 +63,7 @@ src = [
     "apps/**/tests",
 ]
 extend-exclude = [".history"]
-line-length = 120
+line-length = 160
 target-version = "py313"
 
 [tool.ruff.lint]
