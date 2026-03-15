@@ -20,6 +20,7 @@ dev = [
 ]
 notebooks = [
     "folium>=0.19.0",
+    "plotly>=6.0.0",
     "requests>=2.32.0",
     "ipykernel>=6.29.0",
     "pandas>=3.0.1",
@@ -30,7 +31,10 @@ notebooks = [
     "jinja2>=3.1.6",
     "duckdb>=1.4.4",
     "pyarrow>=23.0.1",
+    "python-dotenv>=1.2.2",
     "cartopy>=0.25.0",
+    "jupysql>=0.11.1",
+    "duckdb-engine>=0.17.0",
 ]
 
 [build-system]
@@ -65,6 +69,9 @@ select = ["E", "F", "I", "B", "UP", "SIM", "W"]
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
+[tool.pylint.format]
+max-line-length = 120
 
 [tool.mypy]
 files = ['.']
