@@ -72,7 +72,7 @@ function rename() {
     for i in "${!from[@]}"; do
         if [[ -f "${from[i]}" ]]; then
             if [[ -f "${to[i]}" ]]; then
-                echo "${YELLOW}Warning${NC}{$GRAY}: Target file ${to[i]} already exists. Skipping rename of ${from[i]}.${NC}"
+                echo "${YELLOW}Warning${NC}${GRAY}: Target file ${to[i]} already exists. Skipping rename of ${from[i]}.${NC}"
             else
                 git mv "${from[i]}" "${to[i]}"
                 echo "${GREEN}OK${NC}: Renamed ${from[i]} to ${to[i]}."
@@ -96,12 +96,12 @@ if [[ -z $(git branch --show-current) ]]; then
     exit 1
 fi
 
-if [[ $(git rev-parse --abrev-ref HEAD) == "main" ]]; then
+if [[ $(git rev-parse --abbrev-ref HEAD) == "main" ]]; then
     echo "${RED}Error${NC}: Currently on main branch. Please checkout a feature branch before running this script."
     exit 1
 fi
 
-if [[ $(git rev-parse --abrev-ref HEAD) == "develop" ]]; then
+if [[ $(git rev-parse --abbrev-ref HEAD) == "develop" ]]; then
     echo "${RED}Error${NC}: Currently on develop branch. Please checkout a feature branch before running this script."
     exit 1
 fi
